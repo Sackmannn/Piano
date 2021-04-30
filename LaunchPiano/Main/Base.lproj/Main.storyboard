@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LaunchPiano" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CIK-Z8-AN0">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CCn-2r-Bln">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
+                                        <subviews>
+                                            <button opaque="NO" alpha="0.5" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOB-gR-N7i">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="272.5"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <state key="normal" title="S1">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="repoducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="381-xl-cW1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.5" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uAS-1q-soS">
+                                                <rect key="frame" x="138" y="0.0" width="138" height="272.5"/>
+                                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <state key="normal" title="S2">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="repoducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FSK-BH-HeF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.5" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nu9-fK-xpg">
+                                                <rect key="frame" x="276" y="0.0" width="138" height="272.5"/>
+                                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <state key="normal" title="S3">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="repoducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="geC-MI-mfn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="w85-C1-0gk">
+                                        <rect key="frame" x="0.0" y="272.5" width="414" height="273"/>
+                                        <subviews>
+                                            <button opaque="NO" alpha="0.5" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6W-5q-n6K">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="273"/>
+                                                <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <state key="normal" title="S4">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="repoducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G45-VD-54j"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.5" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8t-pw-fr7">
+                                                <rect key="frame" x="138" y="0.0" width="138" height="273"/>
+                                                <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <state key="normal" title="S5">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="repoducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RBQ-WT-VsA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.5" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BC9-BP-Pvf">
+                                                <rect key="frame" x="276" y="0.0" width="138" height="273"/>
+                                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <state key="normal" title="S6">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="repoducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ay-GL-ILK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ew0-uU-Qf1">
+                                        <rect key="frame" x="0.0" y="545.5" width="414" height="272.5"/>
+                                        <subviews>
+                                            <button opaque="NO" alpha="0.5" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8o-PI-AFa">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="272.5"/>
+                                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <state key="normal" title="S7">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="repoducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nqw-mV-snX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.5" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OL-6J-TFX">
+                                                <rect key="frame" x="138" y="0.0" width="138" height="272.5"/>
+                                                <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <state key="normal" title="S8">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="repoducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4D5-P4-1Cf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" alpha="0.5" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfJ-f0-ViH">
+                                                <rect key="frame" x="276" y="0.0" width="138" height="272.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <state key="normal" title="S9">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="repoducirLoop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Trt-c0-ZU5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eCy-y2-OAX"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="eCy-y2-OAX"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="eCy-y2-OAX"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="TCR-6X-wxA">
+                                <rect key="frame" x="0.0" y="862" width="447" height="0.0"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdZ-Uf-TPd">
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="0.0"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <state key="normal" title="DO">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="Gij-Zx-82R"/>
+                                            <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3q3-kc-HyJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I11-lK-p7w">
+                                        <rect key="frame" x="56.5" y="0.0" width="53" height="0.0"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <state key="normal" title="RE">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="UeU-HU-UfC"/>
+                                            <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZl-85-Hjr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eb9-cN-joe">
+                                        <rect key="frame" x="112.5" y="0.0" width="53.5" height="0.0"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <state key="normal" title="MI">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="U1y-Hl-eeG"/>
+                                            <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RcI-W2-DgS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLM-IH-WGT">
+                                        <rect key="frame" x="169" y="0.0" width="53" height="0.0"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <state key="normal" title="FA">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="2cF-au-LIX"/>
+                                            <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mkv-hW-ndv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6p-rV-fDE">
+                                        <rect key="frame" x="225" y="0.0" width="53.5" height="0.0"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <state key="normal" title="SOL">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="heB-aK-J6R"/>
+                                            <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qfi-3H-2e2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DU4-tx-8eL">
+                                        <rect key="frame" x="281.5" y="0.0" width="53" height="0.0"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <state key="normal" title="LA">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="GpA-Bv-Wm7"/>
+                                            <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="385-TZ-Zy8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNT-mI-LrT">
+                                        <rect key="frame" x="337.5" y="0.0" width="53.5" height="0.0"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <state key="normal" title="SI">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="GVe-Da-ldh"/>
+                                            <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AeL-WC-ytk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVr-s0-jea">
+                                        <rect key="frame" x="394" y="0.0" width="53" height="0.0"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <state key="normal" title="DO">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="piano:" destination="BYZ-38-t0r" eventType="touchDown" id="GV8-4T-Bdi"/>
+                                            <action selector="soltarTecla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fx8-Nz-tyh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TCR-6X-wxA" firstAttribute="top" secondItem="CIK-Z8-AN0" secondAttribute="bottom" id="3u5-aJ-pmb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TCR-6X-wxA" secondAttribute="trailing" constant="-33" id="8wA-CZ-FRq"/>
+                            <constraint firstItem="TCR-6X-wxA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AvE-Ck-Bmu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CIK-Z8-AN0" secondAttribute="trailing" constant="-33" id="i9F-jh-bzS"/>
+                            <constraint firstItem="CIK-Z8-AN0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="48" id="ka7-lb-C8a"/>
+                            <constraint firstItem="CIK-Z8-AN0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mpE-a1-nSP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CIK-Z8-AN0" secondAttribute="bottom" id="n7J-mJ-NEG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CIK-Z8-AN0" secondAttribute="bottom" constant="310" id="pOZ-rC-Aud"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TCR-6X-wxA" secondAttribute="bottom" id="pQu-M4-HcE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CIK-Z8-AN0" secondAttribute="trailing" id="qwi-6h-VBf"/>
+                            <constraint firstItem="CIK-Z8-AN0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sS8-4a-uIp"/>
+                            <constraint firstItem="CIK-Z8-AN0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vvQ-3p-4yM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="i9F-jh-bzS"/>
+                                <exclude reference="n7J-mJ-NEG"/>
+                                <exclude reference="pOZ-rC-Aud"/>
+                                <exclude reference="qwi-6h-VBf"/>
+                                <exclude reference="ka7-lb-C8a"/>
+                                <exclude reference="mpE-a1-nSP"/>
+                                <exclude reference="sS8-4a-uIp"/>
+                                <exclude reference="vvQ-3p-4yM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="i9F-jh-bzS"/>
+                                <include reference="pOZ-rC-Aud"/>
+                                <include reference="ka7-lb-C8a"/>
+                                <include reference="mpE-a1-nSP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="n7J-mJ-NEG"/>
+                                <include reference="qwi-6h-VBf"/>
+                                <include reference="sS8-4a-uIp"/>
+                                <include reference="vvQ-3p-4yM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outletCollection property="sonido" destination="IOB-gR-N7i" collectionClass="NSMutableArray" id="M46-Ex-iXh"/>
+                        <outletCollection property="sonido" destination="uAS-1q-soS" collectionClass="NSMutableArray" id="WJX-xp-azX"/>
+                        <outletCollection property="sonido" destination="nu9-fK-xpg" collectionClass="NSMutableArray" id="SWs-My-Jyq"/>
+                        <outletCollection property="sonido" destination="t6W-5q-n6K" collectionClass="NSMutableArray" id="RJF-pc-BCU"/>
+                        <outletCollection property="sonido" destination="g8t-pw-fr7" collectionClass="NSMutableArray" id="95L-ci-xMF"/>
+                        <outletCollection property="sonido" destination="BC9-BP-Pvf" collectionClass="NSMutableArray" id="Avt-gR-CmB"/>
+                        <outletCollection property="sonido" destination="f8o-PI-AFa" collectionClass="NSMutableArray" id="k5i-Hn-STy"/>
+                        <outletCollection property="sonido" destination="4OL-6J-TFX" collectionClass="NSMutableArray" id="iDw-Du-aDC"/>
+                        <outletCollection property="sonido" destination="yfJ-f0-ViH" collectionClass="NSMutableArray" id="7ND-Ob-ll3"/>
+                        <outletCollection property="nota" destination="WdZ-Uf-TPd" collectionClass="NSMutableArray" id="nxw-3a-Mgf"/>
+                        <outletCollection property="nota" destination="I11-lK-p7w" collectionClass="NSMutableArray" id="L6t-38-Osj"/>
+                        <outletCollection property="nota" destination="eb9-cN-joe" collectionClass="NSMutableArray" id="Kr5-Aj-Hxi"/>
+                        <outletCollection property="nota" destination="gLM-IH-WGT" collectionClass="NSMutableArray" id="dzo-YY-K4j"/>
+                        <outletCollection property="nota" destination="W6p-rV-fDE" collectionClass="NSMutableArray" id="kCd-zL-To3"/>
+                        <outletCollection property="nota" destination="DU4-tx-8eL" collectionClass="NSMutableArray" id="OSz-aj-4Hy"/>
+                        <outletCollection property="nota" destination="jNT-mI-LrT" collectionClass="NSMutableArray" id="4xc-S5-e7f"/>
+                        <outletCollection property="nota" destination="HVr-s0-jea" collectionClass="NSMutableArray" id="sL8-vf-BrF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162.72321428571428" y="97.101449275362327"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
